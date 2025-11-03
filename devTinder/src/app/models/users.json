@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Aarav Mehta",
+    "designation": "UI/UX Designer",
+    "about": "Creative thinker with a passion for clean interfaces.",
+    "address": "Mumbai, India",
+    "phone": "+91 98765 43210",
+    "image": "https://i.pravatar.cc/150?img=12"
+  },
+  {
+    "name": "Sanya Kapoor",
+    "designation": "Frontend Developer",
+    "about": "Angular enthusiast and JavaScript ninja.",
+    "address": "Pune, India",
+    "phone": "+91 91234 56789",
+    "image": "https://i.pravatar.cc/150?img=28"
+  },
+  {
+    "name": "Rohan Iyer",
+    "designation": "Digital Strategist",
+    "about": "Helping brands grow through digital innovation.",
+    "address": "Bangalore, India",
+    "phone": "+91 99887 66554",
+    "image": "https://i.pravatar.cc/150?img=40"
+  },
+  {
+    "name": "Ishita Sharma",
+    "designation": "Product Manager",
+    "about": "Drives business outcomes with user-centered design.",
+    "address": "Delhi, India",
+    "phone": "+91 90909 80808",
+    "image": "https://i.pravatar.cc/150?img=15"
+  }
+]

@@ -1,0 +1,23 @@
+.background_img {
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  backdrop-filter: blur(10px);
+}
+
+.input-group-text {
+  background: #ff5f6d;
+  color: white;
+  border: none;
+}
+
+.form-control:focus {
+  border-color: #ff5f6d;
+  box-shadow: 0 0 0 0.2rem rgba(255, 95, 109, 0.25);
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,9 @@
+.navbar {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

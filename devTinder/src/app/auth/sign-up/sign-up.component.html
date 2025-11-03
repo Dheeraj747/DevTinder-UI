@@ -1,0 +1,94 @@
+<div class="background_img d-flex justify-content-center align-items-center" 
+     style="min-height: 100vh; background: linear-gradient(135deg, #ff5f6d, #ffc371);">
+  <div class="container text-center">
+    
+    <!-- Logo Section -->
+    <div class="mb-4">
+      <!-- <img src="assets/images/devtinder-logo.png" alt="DevTinder Logo" 
+           style="width: 100px; height: 100px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"> -->
+      <h2 class="mt-2" style="font-weight: bold; color: white;">
+         <i class="fas fa-fire"></i> Dev<span class="text-dark">Tinder</span>
+      </h2>
+    </div>
+
+    <!-- Card Section -->
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-7 col-sm-10 col-xs-10">
+        <div class="card shadow-lg" style="border-radius: 20px; background: rgba(255,255,255,0.95);">
+          <div class="card-header text-center" style="border-bottom: none; background: transparent;">
+            <h3 class="card-title" style="font-weight: 600; color: #ff5f6d;">Sign Up</h3>
+          </div>
+
+          <div class="card-body text-left">
+            <div class="form-group">
+              <label>First Name</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="signup.firstName" name="firstName" placeholder="Enter first name">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Last Name</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" class="form-control" [(ngModel)]="signup.lastName" name="lastName" placeholder="Enter last name">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-at"></i></span>
+                </div>
+                <input type="email" class="form-control" [(ngModel)]="signup.email" name="email" placeholder="Enter email address">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Password</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-key"></i></span>
+                </div>
+                <input type="password" class="form-control" [(ngModel)]="signup.password" name="password" placeholder="Enter password">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Confirm Password</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-key"></i></span>
+                </div>
+                <input type="password" class="form-control" [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Re-enter password">
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer text-center" style="background: transparent; border-top: none;">
+            <button type="submit" class="btn btn-primary mx-2" 
+                    style="width: 120px; border-radius: 10px; background: linear-gradient(135deg, #ff5f6d, #ffc371); border: none; font-weight: 600;" 
+                    (click)="onSignUp()">
+              Sign Up
+            </button>
+            <button class="btn btn-danger mx-2" 
+                    style="width: 120px; border-radius: 10px; background: #ff5f6d; border: none; font-weight: 600;" 
+                    (click)="reset()">
+              Reset
+            </button>
+          </div>
+
+          <p class="mb-3 text-center">
+            <a href="login" style="color: #ff5f6d;">Already have an account? Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

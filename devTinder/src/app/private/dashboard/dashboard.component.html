@@ -1,0 +1,46 @@
+<app-header></app-header>
+
+<section class="swipe-section d-flex justify-content-center align-items-center">
+  <div class="card-container position-relative">
+
+    <!-- Stack of cards -->
+    <div
+      class="swipe-card shadow-lg rounded-3 text-center position-absolute p-4"
+      *ngFor="let user of users; let i = index"
+      [style.zIndex]="i + 1"
+      (mousedown)="startSwipe($event, i)"
+      (mousemove)="moveSwipe($event, i)"
+      (mouseup)="endSwipe($event, i)"
+      (touchstart)="startSwipe($event, i)"
+      (touchmove)="moveSwipe($event, i)"
+      (touchend)="endSwipe($event, i)"
+      #card
+    >
+      <!-- Like / Nope badges only for top card -->
+      <div class="badge like-badge" *ngIf="i === users.length - 1 && showLike">LIKE</div>
+      <div class="badge nope-badge" *ngIf="i === users.length - 1 && showNope">NOPE</div>
+
+      <img
+        [src]="user.image"
+        alt="user-avatar"
+        class="rounded-circle border border-3 border-white shadow-sm mb-3"
+        style="width: 120px; height: 120px; object-fit: cover;"
+      />
+
+      <h5 class="fw-bold text-danger mb-1">{{ user.name }}</h5>
+      <p class="text-muted mb-2">{{ user.designation }}</p>
+      <small>{{ user.about }}</small>
+
+      <!-- Swipe buttons -->
+      <div class="swipe-buttons mt-4 d-flex justify-content-between">
+        <button class="btn btn-outline-danger rounded-circle" (click)="swipeLeftButton()">
+          <i class="fas fa-times"></i>
+        </button>
+        <button class="btn btn-outline-success rounded-circle" (click)="swipeRightButton()">
+          <i class="fas fa-heart"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
