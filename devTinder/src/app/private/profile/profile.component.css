@@ -1,0 +1,21 @@
+.container{
+    width: 100px;
+    height: 1oopx;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card{
+    height: 300px;
+    width:400px
+}
